@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-direction: center;
-    background-color: #B8DC3C;
+    background-color: #8FBE00;
 }
 
 .box1 {
@@ -13,32 +13,32 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: honeydew;
-    border: 2px #DB2464 solid; 
+    background-color: #00A8C6;
+    border: 2px #AEE239 inset; 
     border-radius: 35px;
     padding: 10px;
     margin: 20px;
 }
 
 .box2 {
-    width: 400px;
+    width: 300px;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: honeydew;
-    border: 2px #CB2402 solid; 
+    background-color: #40C0CB;
+    border: 2px #AEE239 inset;  
     border-radius: 35px;
     margin: 5px;
-    background-color: #4C49A2;
+    background-color: ;
 }
 
 button {
     width: 170px;
     height: 50px;
     outline: none;
-    border: 3px solid black;
+    border: 3px solid #266c79;
     font-size: 20px;
     border-radius: 15px;
     margin: 5px;
@@ -47,9 +47,9 @@ button {
 span {
     height: 50px;
     width: 270px;
-    border: 2px solid #CB2402;
+    border: 2px solid #00A8C6;
     font-size: 20px;
-    border-radius: 35px;
+    border-radius: 15px;
     margin: 5px;
     display: flex;
     align-items: center;
