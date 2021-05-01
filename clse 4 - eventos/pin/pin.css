@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-direction: center;
-    background-color: grey;
+    background-color: #B8DC3C;
 }
 
 .box1 {
@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: honeydew;
-    border: 2px indianred solid; 
+    border: 2px #DB2464 solid; 
     border-radius: 35px;
     padding: 10px;
     margin: 20px;
@@ -28,27 +28,31 @@ body {
     justify-content: center;
     align-items: center;
     background-color: honeydew;
-    border: 2px indianred solid; 
+    border: 2px #CB2402 solid; 
     border-radius: 35px;
     margin: 5px;
+    background-color: #4C49A2;
 }
 
 button {
     width: 170px;
     height: 50px;
     outline: none;
-    border: 1px solid black;
+    border: 3px solid black;
     font-size: 20px;
-    border-radius: 35px;
+    border-radius: 15px;
     margin: 5px;
 }
 
 span {
     height: 50px;
     width: 270px;
-    border: 1px solid black;
+    border: 2px solid #CB2402;
     font-size: 20px;
     border-radius: 35px;
     margin: 5px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
