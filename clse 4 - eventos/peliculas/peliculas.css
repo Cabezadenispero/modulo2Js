@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 100px;
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width:  1000px;
+    height: 500px;
+}
+
+img {
+    width:100%;
+}
+
+li {
+    list-style:none;
+    width: 120px;
+    height: 100px;
+    display: inline;
+    padding: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
