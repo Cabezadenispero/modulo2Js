@@ -1,0 +1,30 @@
+body {
+    display:flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 50px;
+}
+
+span {
+    height: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+p { 
+    width: 900px; 
+    font-size: 20px; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    height: 80px; 
+    width:200px; 
+    outline: none; 
+    font-size: 40px; 
+    border-radius: 35px; 
+    border: 3px solid black;
+}
