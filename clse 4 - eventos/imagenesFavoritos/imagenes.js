@@ -5,14 +5,41 @@
     document.getElementById("form").appendChild(b);
 }*/
 
-const img = document.getElementById("img-fav")
-const listFav = document.getElementById("list-fav")
-const imgClone = img.cloneNode(true);
-console.log(imgClone)
+const images = document.getElementsByClassName("img-fav")
+const listFav= document.getElementById("list-fav")
 
-const addToFav = () => {
-    listFav.appendChild(imgClone)
+/*
+for(let i=0; i <images.length; i++){
+    const imgClone = images[i].cloneNode(true);
+    
+    const addToFav =()=>{
+    listFav.appendChild(imgClone);
+    console.log(listFav)
+    
+    const borrarCosito=()=>{
+    listFav.removeChild(imgClone);
+    }
+    
+    imgClone.addEventListener('click', borrarCosito)
+    }
+    images[i].addEventListener("click", addToFav);
+    
+} 
+
+*/
+
+
+const imgClone = images[i].cloneNode(true);
+    
+const addToFav =(event)=>{
+    const imgClone = event.target;
+    listFav.appendChild(imgClone);
     console.log(listFav)
 }
+const borrarCosito=()=>{
+    listFav.removeChild(imgClone);
+}
 
-img.addEventListener("click", addToFav)
+for(let i=0; i <images.length; i++){    
+    images[i].addEventListener("click", addToFav);
+} 
