@@ -44,6 +44,13 @@ h2 {
     height: 95%;
     margin: 10px 5px;
     border: 2px solid black;
+    /*window.nambahData = function() {
+        var a = document.getElementsByName("harga");
+        var b = a[0].cloneNode(false);
+        document.getElementById("form").appendChild(b);
+    }*/
+    
+    
     padding:5px;
 }
 
@@ -56,6 +63,5 @@ li {
 }
 
 img {
-
     height: 100%;
 }

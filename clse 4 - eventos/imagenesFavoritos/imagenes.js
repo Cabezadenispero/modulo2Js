@@ -1,36 +1,18 @@
-const imagen= document.querySelector ("img")
-const favoritos= document.querySelector (".favorita-box")
 
-let agregarAFavoritos=function(){ 
-    favoritos.setAttribute("src", imagen.src) = imagen.src
+/*window.nambahData = function() {
+    var a = document.getElementsByName("harga");
+    var b = a[0].cloneNode(false);
+    document.getElementById("form").appendChild(b);
+}*/
+
+const img = document.getElementById("img-fav")
+const listFav = document.getElementById("list-fav")
+const imgClone = img.cloneNode(true);
+console.log(imgClone)
+
+const addToFav = () => {
+    listFav.appendChild(imgClone)
+    console.log(listFav)
 }
 
-imagen.addEventListener (`mouseover`, agregarAFavoritos)
-
-
-
-
-/*
-mode_btn.onclick = () => {
-  modes_menu.classList.toggle('modes_menu--mostrar');
-  modes_menu.classList.toggle('modes_menu--ocultar');
-}
-
-const imgFormat= document.getElementsByClassName('smallSize');
-const bigImg= document.querySelector('#imgBig');
-
-bigImg.style=`height:500px;`
-
-
-
-
-for(let i=0; i < imgFormat.length; i++){
-    imgFormat[i].style.height="100px";
-    const changeSize=()=>{   
-        bigImg.setAttribute('src',imgFormat[i].src)
-    }
-    //Esto funciona si hago click sobre una de las imagenes
-    //imgFormat[i].addEventListener('click', changeSize);
-    imgFormat[i].addEventListener('mouseover', changeSize);
-};
-*/
+img.addEventListener("click", addToFav)
