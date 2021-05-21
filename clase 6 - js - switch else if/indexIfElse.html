@@ -10,21 +10,69 @@
 </head>
 <body>
 <!--ejercicio 1 par o impar-->
-    <form class="get-number">
-        <label class="number-label" for="number">Ingrese un numero</label>
-        <input class="easy-input" type="number" id="number">
+    <form class="height270">
+        <label for="number">Ingrese un numero</label>
+        <input type="number" id="number">
         <button class="btn-small" id="btn-number">¿Es par o impar?</button>
     </form>
 <!--ejercicio 2 banco-->
-    <form class="bank">
-        <label class="saved-money_label" for="saved-money">Dinero disponible</label>
-        <input class="saved-money" type="number" id="saved-money">
-        <label class="saved-money_label" for="extract-money">Dinero a extraer</label>
-        <input class="extract-amount" type="number" id="extract-money">
-        <button id="btn-bank">Respuesta</button>
-        <span id="answer-box"></span>      
+    <form class="height350">
+        <label for="saved-money">Dinero disponible</label>
+        <input type="number" id="saved-money">
+        <label for="extract-money">Dinero a extraer</label>
+        <input type="number" id="extract-money">
+        <span class="span_style-box" id="answer-box"></span>      
     </form>
-
+<!--ejercicio 3 días del mes-->
+    <form class="height270">
+        <label for="month-name">Elija un mes</label>
+        <select id="month-name">
+            <option value="word-select">--------</option>
+            <option class="word-select" value="31">Enero</option>
+            <option class="word-select" value="28">Febrero</option>
+            <option class="word-select" value="31">Marzo</option>
+            <option class="word-select" value="30">Abril</option>
+            <option class="word-select" value="31">Mayo</option>
+            <option class="word-select" value="30">Junio</option>
+            <option class="word-select" value="31">Julio</option>
+            <option class="word-select" value="31">Agosto</option>
+            <option class="word-select" value="30">Septiembre</option>
+            <option class="word-select" value="31">Octubre</option>
+            <option class="word-select" value="30">Diciembre</option>
+            <option class="word-select" value="31"></option>
+        </select>      
+        <span id="month-box" class="span_style-box" ></span>
+    </form>
+<!--ejercicio 4 a que generacion pertenece-->
+    <form class="height350">
+        <label for="birth-year">Dinos tu año de nacimiento</label>
+        <input type="number" id="birth-year">
+        <span class="span_style-box" id="generation-box"></span>      
+    </form>
+<!--ejercicio 5 heladeria II-->
+    <form class="height350">
+        <label class="number-label" for="ice-cream_option">Elija su tarrina de helado</label>
+        <select id="ice-cream_option">
+            <option>--------</option>
+            <option value="2">1/4 kg.</option>
+            <option value="3">1/2 kg.</option>
+            <option value="4">1/3 kg.</option>
+            <option value="5">1 kg.</option>
+        </select>      
+        <span class="span_style-box" id="ice-cream_answer"></span>
+    </form>
+<!--ejercicio 6 examen aprobado-->
+    <form class="height270">
+        <label for="note-test">¿cual es la nota de tu examen?</label>
+        <input type="number" id="note-test">    
+        <span class="span_style-box" id="test-result"></span>
+    </form>
+<!--ejercicio 6 examen aprobado-->
+    <form class="height270">
+        <label for="note-test">¿cual es la nota de tu examen?</label>
+        <input type="number" id="note-test">    
+        <span class="span_style-box" id="test-result"></span>
+    </form>
 
 
 

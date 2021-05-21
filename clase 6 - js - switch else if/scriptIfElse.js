@@ -18,8 +18,7 @@ btnNumber.addEventListener('click',compareOddOrEven)
 //------------ ejercicio Banco --------------------
 
 const availableMoney = document.getElementById('saved-money')  
-const extractMoney = document.getElementById('extract-money')  
-const btnBank = document.getElementById('btn-bank')  
+const extractMoney = document.getElementById('extract-money')   
 const answerBox = document.getElementById('answer-box')  
 
 const getAnswer=()=>
@@ -38,4 +37,109 @@ const getAnswer=()=>
     console.log(getAnswer)
 }
 
-btnBank.addEventListener(`mouseover`,getAnswer)
+extractMoney.addEventListener(`input`,getAnswer)
+
+/* ejercicio 3 días del mes */
+
+const getMonthName = document.getElementById('month-name')
+const daysBoxAnswer = document.getElementById('month-box')  
+
+const getAnswerDays =()=>
+{
+    const getMonthValue = getMonthName.value
+    console.log (getMonthValue)
+    if (getMonthValue == "30"){
+        daysBoxAnswer.innerHTML= "el mes elegido tiene 30 días"
+    }
+    else if(getMonthValue == "31"){
+        daysBoxAnswer.innerHTML= "este mes tiene 31 días"
+    }
+    else if(getMonthValue == "28"){
+        daysBoxAnswer.innerHTML= "28 días, el mes más cortito!"
+    }
+}
+
+getMonthName.addEventListener('input', getAnswerDays);
+
+
+/* ejercicio 4 a que generación perteneces */
+
+const getBirthYear = document.getElementById('birth-year')
+const generationBoxAnswer = document.getElementById('generation-box')  
+
+const getGenerationName =()=>
+{
+    const getBirthYearValue = getBirthYear.value
+    console.log (getBirthYearValue)
+    if (getBirthYearValue >= 1945 && getBirthYearValue<=1964){
+        generationBoxAnswer.innerHTML= "¡¡ Baby Boomer !!"
+    }
+    else if(getBirthYearValue >= 1965 && getBirthYearValue<=1981){
+        generationBoxAnswer.innerHTML= "¡¡ Generación X !!"
+    }
+    else if(getBirthYearValue >= 1982 && getBirthYearValue<=1994){
+        generationBoxAnswer.innerHTML= "¡¡ Millennials !!"
+    }
+    else if(getBirthYearValue >= 1995 && getBirthYearValue<=2022){
+        generationBoxAnswer.innerHTML= "¡¡ Centennials !!"
+    }
+    else if(getBirthYearValue <=1944){
+        generationBoxAnswer.innerHTML= "¡¡ No sabemos en donde ponerlo !!"
+    }
+}
+
+getBirthYear.addEventListener('input', getGenerationName);
+
+/* ejercicio 5 Heladeria II */
+
+const iceCreamOption = document.getElementById('ice-cream_option')
+const iceCreamAnswer = document.getElementById('ice-cream_answer')  
+
+const getYourIceCream =()=>
+{
+    const getYourIceCreamValue = iceCreamOption.value
+    if (getYourIceCreamValue == 2){
+        let flavours = prompt('elija dos sabores');
+        iceCreamAnswer.innerHTML= `se lleva 1/4kg de ${flavours}` 
+        console.log(getYourIceCreamValue)
+    }
+    else if(getYourIceCreamValue == 3){
+        let flavours = prompt('elija 3 sabores');
+        iceCreamAnswer.innerHTML= `se lleva 1/2kg de ${flavours}` 
+        console.log(getYourIceCreamValue)
+    }
+    else if(getYourIceCreamValue == 4){
+        let flavours = prompt('elija 4 sabores');
+        iceCreamAnswer.innerHTML= `se lleva 1/3kg de ${flavours}` 
+        console.log(getYourIceCreamValue)
+    }
+    else if(getYourIceCreamValue == 5){
+        let flavours = prompt('elija 5 sabores');
+        iceCreamAnswer.innerHTML= `se lleva 1 kg de ${flavours}` 
+        console.log(getYourIceCreamValue)
+    }
+}
+
+iceCreamOption.addEventListener('input', getYourIceCream);
+
+/* ejercicio 6 aprobado */
+const noteTest = document.getElementById('note-test')
+const testRestult = document.getElementById('test-result')  
+
+const getYouDo =()=>
+{
+    const noteTestValue = noteTest.value
+    if (noteTestValue >= 7){
+        testRestult.innerHTML= "¡Aprobado!" 
+    }
+    else if(noteTestValue > 4 && noteTestValue < 7){
+        testRestult.innerHTML= "Te toca recuperar" 
+        console.log(noteTestValue)
+    }
+    else if(noteTestValue <= 4){
+        testRestult.innerHTML= "Aplazado" 
+        console.log(noteTestValue)
+    }
+}
+
+noteTest.addEventListener('input', getYouDo);
