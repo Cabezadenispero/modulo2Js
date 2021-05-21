@@ -1,13 +1,16 @@
 body {
     padding: 50px;
-    background-color: rgb(219, 84, 213);
+    background-color: rgb(214, 202, 214);
     font-family: arial; 
+    display: flex;
+    flex-direction: row;
 }
 
-form{
+.get-number{
     height: 250px;
     width: 250px;
-    border: 1px solid pink;
+    border: 1px solid rgb(84, 147, 230);
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -16,24 +19,24 @@ form{
     background-color: rgb(203, 217, 219);
 }
 
-label {
+.number-label {
     font-size:30px;
     margin: 15px;
     text-align: center;
 }
 
-input {
+.easy-input {
     height: 40px;
     width: 70px;
     font-size: 35px;
     border-radius:13px;
     border: none;
-    box-shadow: 1px 0px 15px 5px #FFFA4A;
+    box-shadow: 1px 0px 15px 5px #acaa83;
     text-align: center;
     outline: none;
 }
 
-button {
+.btn-small {
     height: 40px;
     width: 100px;
     font-size: 15px;
@@ -41,5 +44,68 @@ button {
     border: 1px solid yellow;
     margin: 20px;
     text-align: center;
+    outline: none;
+}
+ /* ejercicio 2 banco */
+
+.bank {
+    height: 300px;
+    width: 250px;
+    padding-top: 20px;
+    border: 1px solid rgb(230, 81, 106);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start; 
+    border-radius: 10px;
+    background-color: rgb(203, 217, 219);
+}
+
+.saved-money_label {
+    font-size:20px;
+    margin: 10px 0px 2px;
+    text-align: center;
+}
+
+.saved-money {
+    height: 30px;
+    width: 80px;
+    font-size: 26px;
+    border-radius:8px;
+    border: none;
+    box-shadow: 1px 0px 15px 5px #44f58e;
+    text-align: center;
+    outline: none;
+    margin: 4px 0px;
+}
+
+.extract-amount {
+    height: 30px;
+    width: 80px;
+    font-size: 26px;
+    border-radius:8px;
+    border: none;
+    box-shadow: 1px 0px 10px 5px #FFFA4A;
+    text-align: center;
+    outline: none;
+    margin: 4px 0px 10px;
+}
+
+#answer-box{
+    font-size: 15px;
+    height: 45px;
+    width: 90%;    
+    margin: 15px;
+    padding: 6px ;
+    text-align: center;
+}
+
+
+#btn-bank {
+    height: 35px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
     outline: none;
 }

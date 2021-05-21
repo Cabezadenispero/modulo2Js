@@ -9,13 +9,21 @@
     <script src="https://kit.fontawesome.com/7538d07a3c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form>
-    <label for="number">Ingrese un numero</label>
-    <input type="number" id="number">
-    <button id="btn-number">¿Es par o impar?</button>
+<!--ejercicio 1 par o impar-->
+    <form class="get-number">
+        <label class="number-label" for="number">Ingrese un numero</label>
+        <input class="easy-input" type="number" id="number">
+        <button class="btn-small" id="btn-number">¿Es par o impar?</button>
     </form>
-    
-
+<!--ejercicio 2 banco-->
+    <form class="bank">
+        <label class="saved-money_label" for="saved-money">Dinero disponible</label>
+        <input class="saved-money" type="number" id="saved-money">
+        <label class="saved-money_label" for="extract-money">Dinero a extraer</label>
+        <input class="extract-amount" type="number" id="extract-money">
+        <button id="btn-bank">Respuesta</button>
+        <span id="answer-box"></span>      
+    </form>
 
 
 
