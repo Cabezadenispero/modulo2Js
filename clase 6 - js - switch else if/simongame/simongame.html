@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Simon Game</title>
+    <link rel="stylesheet" href="simongame.css">
+    <script src="https://kit.fontawesome.com/7538d07a3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="game">
+        <header>
+            <h1 class="heading js-heading">Simon Game</h1>
+        </header>
+    
+        <section class="tile-container js-container unclickable">
+            <div class="tile tile-red" data-tile="red"></div>
+            <div class="tile tile-green" data-tile="green"></div>
+            <div class="tile tile-blue" data-tile="blue"></div>
+            <div class="tile tile-yellow" data-tile="yellow"></div>
+        </section>
+    
+        <footer class="info-section">
+            <button class="start-button js-start">Start</button>
+            <span class="info js-info hidden"></span>
+        </footer>
+    </main>
+    <script src="simongame.js"></script>
+</body>

@@ -143,3 +143,41 @@ const getYouDo =()=>
 }
 
 noteTest.addEventListener('input', getYouDo);
+
+
+/* ejercicio 7 grupo de letras */
+
+const getLetter = document.getElementById('letter')
+const answerLetterBox = document.getElementById('letter-answer')  
+
+const getLetterGroup =()=>
+{
+    const getLetterValue = getLetter.value
+    const getLetterValueUpper = getLetterValue.toUpperCase()
+    const group1 = "ABCDE"
+    const group2 = "FGHIJK"
+    const group3 = "LMNOPQ"
+    const group4 = "RSTUVW"
+    const group5 = "XYZ"
+
+    console.log(getLetterValueUpper)
+    if (group1.includes(getLetterValueUpper) ){
+        answerLetterBox.innerHTML= "tu letra está en el grupo A!" 
+    }
+    else if(group2.includes(getLetterValueUpper) ){
+        answerLetterBox.innerHTML= "tu letra está en el grupo B!" 
+    }
+    else if(group3.includes(getLetterValueUpper) ){
+        answerLetterBox.innerHTML= "tu letra está en el grupo C!" 
+    }
+    else if(group4.includes(getLetterValueUpper) ){
+        answerLetterBox.innerHTML= "tu letra está en el grupo D!" 
+    }
+    else if(group5.includes(getLetterValueUpper) ){
+        answerLetterBox.innerHTML= "tu letra está en el grupo E!" 
+    }
+}
+
+getLetter.addEventListener('input', getLetterGroup);
+
+// numero aleatorio 

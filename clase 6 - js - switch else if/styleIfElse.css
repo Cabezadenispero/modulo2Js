@@ -1,6 +1,6 @@
 body {
     padding: 10px;
-    background-color: #f7fd04;
+    background-color: white;
     font-family: arial; 
     color: #314855;
     display: flex;
@@ -17,7 +17,7 @@ label {
 } 
 
 form {
-    background-color: #15f5b5;
+    background-color: #f7fd04;
     border: 1px solid #64bedf;
     border-radius: 10px;
     width: 250px;
