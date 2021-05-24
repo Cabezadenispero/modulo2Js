@@ -15,6 +15,14 @@ select {
     outline: none;
 }
 
+
+button {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}
+
 .flexWrap {
     display: flex;
     justify-content: center;
@@ -32,7 +40,7 @@ select {
     width:500px;
     height: 340px;
     border: 1px solid #38859C;
-    background-color: #B6B6B6;
+    background-color: #ff9742;
     border-radius: 10px;
     margin: 10px;
 }
@@ -80,12 +88,8 @@ select {
 }
 
 #btn-reset {
-    width: 60px;
-    height: 40px;
     margin-top: 100px;
     margin-left: 40px;
-    border-radius: 10px;
-    outline: none;
 }
 
 /*   EJERCICIO ADIVINANZAS */
@@ -124,4 +128,16 @@ select {
     background-color: white;
     outline: none;
     border-radius: 10px;
+}
+
+#reset-btn {
+    margin-top: 10px;
+}
+
+#answer {
+    color: blue;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 5px;
+    text-shadow: 3px 3px #f8f5f5;
 }

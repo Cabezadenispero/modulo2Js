@@ -46,3 +46,10 @@ answer2.addEventListener('input',getResponse);
 answer3.addEventListener('input',getResponse);
 answer4.addEventListener('input',getResponse);
 
+const reset = document.querySelector('#reset-btn');
+
+function reloadGuess(){
+    window.location.reload();
+}
+
+reset.addEventListener('click', reloadGuess)
