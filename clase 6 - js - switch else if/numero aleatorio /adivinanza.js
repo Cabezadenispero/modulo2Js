@@ -15,15 +15,13 @@ const getGuessGame =()=>
 
 guessBtn.addEventListener('click', getGuessGame);
 
-
-
 const answer1 = document.querySelector('#answer-1')
 const answer2 = document.querySelector('#answer-2')
 const answer3 = document.querySelector('#answer-3')
 const answer4 = document.querySelector('#answer-4')
 
-const getResponse =()=>{
-
+const getResponse =()=>
+{
     if(answer1.value==="correct"){
         responseBox.innerHTML="Correcto!!!"
     }
@@ -36,18 +34,10 @@ const getResponse =()=>{
     else if (answer4.value==="correct"){
         responseBox.innerHTML="Correcto!!!"
     }
-    else if (answer1.value==="wrong"){
+    else {
         responseBox.innerHTML="Fallaste!!!"
     }
-    else if (answer2.value==="wrong"){
-        responseBox.innerHTML="Fallaste!!!"
-    }
-    else if (answer3.value==="wrong"){
-        responseBox.innerHTML="Fallaste!!!"
-    }
-    else if (answer4.value==="wrong"){
-        responseBox.innerHTML="Fallaste!!!"
-    }
+    
     console.log(getResponse)
 }
 
@@ -55,10 +45,4 @@ answer1.addEventListener('input',getResponse);
 answer2.addEventListener('input',getResponse);
 answer3.addEventListener('input',getResponse);
 answer4.addEventListener('input',getResponse);
-
-
-
-
-
-
 
