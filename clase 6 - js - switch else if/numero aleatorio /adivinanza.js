@@ -3,85 +3,62 @@
 const guessBtn= document.getElementById ('guess-btn');
 const guessCards = document.getElementsByClassName ('guess');
 const getAnswerInputChoice = document.getElementsByClassName('answer-Choice');
+let responseBox=document.getElementById('answer');
 
-const answerGuess1= document.getElementById ('answer-box-1');
-const answerGuess2= document.getElementById ('answer-box-2');
-const answerGuess3= document.getElementById ('answer-box-3');
-const answerGuess4= document.getElementById ('answer-box-4');
-const answer1 = document.getElementById ('answer-1');
-const answer2 = document.getElementById ('answer-2');
-const answer3 = document.getElementById ('answer-3');
-const answer4 = document.getElementById ('answer-4');
 
 const getGuessGame =()=>
 {
     let getGuessCard = Math.floor(Math.random()*3);
     let getGuessChoice = guessCards[getGuessCard];
-    getGuessChoice.style = "display: flex;"     
+    getGuessChoice.style = "display: flex;";
 }
 
 guessBtn.addEventListener('click', getGuessGame);
 
 
 
+const answer1 = document.querySelector('#answer-1')
+const answer2 = document.querySelector('#answer-2')
+const answer3 = document.querySelector('#answer-3')
+const answer4 = document.querySelector('#answer-4')
 
+const getResponse =()=>{
 
-
-
-
-
-/*
-const getAnswerCorrect1 =()=>
-    {   
-        const answerChoiceValue = answer1.value
-        console.log(answerChoiceValue)
-        if (answerChoiceValue=="correct"){
-            answerGuess1.innerHTML="Acertaste"
-        }
-        else {
-            answerGuess1.innerHTML="Error!"
-        }
+    if(answer1.value==="correct"){
+        responseBox.innerHTML="Correcto!!!"
     }
-answer1.addEventListener('input',getAnswerCorrect1);
-
-
-const getAnswerCorrect2 =()=>
-    {   
-        const answerChoiceValue = answer2.value
-        console.log(answerChoiceValue)
-        if (answerChoiceValue=="correct"){
-            answerGuess2.innerHTML="Acertaste"
-        }
-        else {
-            answerGuess2.innerHTML="Error!"
-        }
+    else if (answer2.value==="correct"){
+        responseBox.innerHTML="Correcto!!!"
     }
-answer2.addEventListener('input', getAnswerCorrect2)
-
-const getAnswerCorrect3 =()=>
-    {   
-        const answerChoiceValue = answer3.value
-        console.log(answerChoiceValue)
-        if (answerChoiceValue=="correct"){
-            answerGuess3.innerHTML="Acertaste"
-        }
-        else {
-            answerGuess3.innerHTML="Error!"
-        }
+    else if (answer3.value==="correct"){
+        responseBox.innerHTML="Correcto!!!"
     }
-answer3.addEventListener('input', getAnswerCorrect3)
-
-const getAnswerCorrect4 =()=>
-    {   
-        let answerChoiceValue = answer4.value
-        console.log(answerChoiceValue)
-        if (answerChoiceValue=="wrong"){
-            answerGuess4.innerHTML="Acertaste"
-        }
-        else {
-            answerGuess4.innerHTML="Error!"
-        }
+    else if (answer4.value==="correct"){
+        responseBox.innerHTML="Correcto!!!"
     }
-answer4.addEventListener('input', getAnswerCorrect4)
+    else if (answer1.value==="wrong"){
+        responseBox.innerHTML="Fallaste!!!"
+    }
+    else if (answer2.value==="wrong"){
+        responseBox.innerHTML="Fallaste!!!"
+    }
+    else if (answer3.value==="wrong"){
+        responseBox.innerHTML="Fallaste!!!"
+    }
+    else if (answer4.value==="wrong"){
+        responseBox.innerHTML="Fallaste!!!"
+    }
+    console.log(getResponse)
+}
 
-*/
+answer1.addEventListener('input',getResponse);
+answer2.addEventListener('input',getResponse);
+answer3.addEventListener('input',getResponse);
+answer4.addEventListener('input',getResponse);
+
+
+
+
+
+
+
