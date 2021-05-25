@@ -1,6 +1,10 @@
 body {
     padding: 30px;
     font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .game {
@@ -10,6 +14,10 @@ body {
     justify-content: center;
     padding: 30px;
     font-family: fantasy;
+    height: 440px;
+    width: 600px;
+    box-shadow: 0px 0px 8px 2px grey;
+
 }
 
 i {
@@ -21,15 +29,15 @@ i {
     padding: 10px;
     border-radius: 15px;
     border: rgb(2, 1, 1) solid 3px;
-    background-color: rgb(253, 150, 31);
 }
 
 #simon-box {
     font-size: 36px;
-    margin: 10px;
+    margin: 30px;
     border-radius: 15px;
     border: coral dashed 2px;
     padding: 20px;
+    box-shadow: 0px 0px 10px 2px coral;
 }
 
 span {
@@ -39,14 +47,12 @@ span {
 
 #start-game {
     margin: 20px;
-    width: 120px;
+    width: 110px;
     height: 60px;
     font-size: 20px;
-    color: white;
     outline: none;
     border-radius: 15px;
-    border: solid 1px black;
-    background-color: rgb(14, 14, 144);
+    border: solid 2px black;
     display: none;
 }
 
@@ -104,21 +110,21 @@ button {
 
  /* Hover y active */
 
-
- #start-game:active { 
-    background-color: red; 
-    transition: .5s;
+#play-simon:hover {
+    box-shadow: 0px 0px 21px 8px rgb(43, 175, 251);
 }
+
 #start-game:hover {
-    filter: drop-shadow(0 0 0.8rem #F2E124);
+    filter: drop-shadow(0 0 0.8rem #504f48);
     transition: .5s;
+    box-shadow: 0px 0px 21px 8px yellowgreen;
 }
 
 #reset:active { 
     background-color: red; 
 }
 #reset:hover {
-    filter: drop-shadow(0 0 0.8rem #F2E124);
+    box-shadow: 0px 0px 21px 8px rgb(230, 153, 153);
     transition: .5s;
 }
 
@@ -126,7 +132,7 @@ button {
     background-color: red; 
 }
 #cheked:hover {
-    filter: drop-shadow(0 0 0.8rem #F2E124);
+    filter: drop-shadow(0 0 0.8rem #519555);
     transition: .5s;
 }
 

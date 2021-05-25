@@ -39,7 +39,6 @@ const printColorHuman=(event)=> {
         console.log (newArrayColor2)
     } 
 }
-
 /*play-simonrayColor == newArrayColor2){
     console.log('ganó')
 } */
@@ -58,7 +57,6 @@ const printResult =()=> {
         }); 
     }
 }
-
 chekResult.addEventListener('click', printResult)
 
 const reset = document.querySelector('#reset');
@@ -66,7 +64,6 @@ const reset = document.querySelector('#reset');
 function reloadGuess(){
     window.location.reload();
 }
-
 reset.addEventListener('click', reloadGuess)
 
 
