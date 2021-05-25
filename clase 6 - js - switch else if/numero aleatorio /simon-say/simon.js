@@ -19,6 +19,7 @@ const PrintColorSimon =()=>
         newArrayColor.push(simonColor[PositionColor]);
         console.log(newArrayColor)
         printArrayColor.innerHTML = newArrayColor;
+        startGame.style= 'display: block';
     }
 }
 playSimon.addEventListener('click', PrintColorSimon);
