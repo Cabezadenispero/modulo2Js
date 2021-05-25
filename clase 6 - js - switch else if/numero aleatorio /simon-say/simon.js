@@ -27,7 +27,7 @@ playSimon.addEventListener('click', PrintColorSimon);
 
 const showButtons =()=> {
     printArrayColor.style = 'display: none';
-    colorBox.style= 'display: block';
+    colorBox.style= 'display: flex';
     startGame.style= 'display: none';
 }
 startGame.addEventListener('click',showButtons)
@@ -60,6 +60,14 @@ const printResult =()=> {
 }
 
 chekResult.addEventListener('click', printResult)
+
+const reset = document.querySelector('#reset');
+
+function reloadGuess(){
+    window.location.reload();
+}
+
+reset.addEventListener('click', reloadGuess)
 
 
 /*for (let i = 0; newArrayColor.length < i; i++){
