@@ -26,7 +26,7 @@ i {
 }
 
 #play-simon {
-    padding: 10px;
+    padding: 15px 35px;
     border-radius: 15px;
     border: rgb(2, 1, 1) solid 3px;
 }
@@ -35,9 +35,9 @@ i {
     font-size: 36px;
     margin: 30px;
     border-radius: 15px;
-    border: coral dashed 2px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 2px coral;
+    padding: 5px;
+    border: rgb(12, 80, 126) dashed 2px;
+    box-shadow: 0px 0px 16px 2px rgb(246, 15, 235);
 }
 
 span {
@@ -47,12 +47,14 @@ span {
 
 #start-game {
     margin: 20px;
-    width: 110px;
+    width: 200px;
     height: 60px;
     font-size: 20px;
+    font-weight: bold;
+    padding: 0px 20px;
     outline: none;
     border-radius: 15px;
-    border: solid 2px black;
+    border: none;
     display: none;
 }
 
@@ -93,18 +95,20 @@ button {
 
 #cheked {
     height: 50px;
-    margin: 20px;
-    background-color: grey;
-    color: white;
+    width: 160px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
 }
 
 #reset {
     height: 50px;
-    width: 150px;
-    margin: 20px;
-    background-color: grey;
-    color: white;
-    font-size: 15px;
+    width: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
 }
 
 
@@ -117,7 +121,7 @@ button {
 #start-game:hover {
     filter: drop-shadow(0 0 0.8rem #504f48);
     transition: .5s;
-    box-shadow: 0px 0px 21px 8px yellowgreen;
+    box-shadow: 0px 0px 31px 8px rgb(77, 182, 117);
 }
 
 #reset:active { 
@@ -132,7 +136,7 @@ button {
     background-color: red; 
 }
 #cheked:hover {
-    filter: drop-shadow(0 0 0.8rem #519555);
+    filter: drop-shadow(0 0 0.8rem #ca2bbd);
     transition: .5s;
 }
 
