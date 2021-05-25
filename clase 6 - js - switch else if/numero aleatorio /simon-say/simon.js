@@ -51,17 +51,14 @@ green.addEventListener('click', printColorHuman)
 const printResult =()=> {
     if(newArrayColor[0]==newArrayColor2[0] && newArrayColor[1]==newArrayColor2[1] && newArrayColor[2]==newArrayColor2[2] && newArrayColor[3]==newArrayColor2[3] && newArrayColor[4]==newArrayColor2[4] ) {
         swal("Good job!", "You clicked the button!", "success"); }
-    else {
-        
+    else {swal({
+        text: "Ops!!!",
+        icon: "error",
+        }); 
     }
 }
 
-
-
-
-
 chekResult.addEventListener('click', printResult)
-
 
 
 /*for (let i = 0; newArrayColor.length < i; i++){
