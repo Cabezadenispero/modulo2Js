@@ -11,17 +11,21 @@
 <body>
     <i class="fas fa-gamepad"></i> 
     <span id="play-simon">Play With Simon</span>
-    <div id="simon-box">
 
-        
+    <div id="simon-box"> 
     </div>
-    <form action="">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </form>
+
+    <button type="button" id="start-game">Comenzar</button>
+    
+    <div class="color-box">   
+        <button type="button" id="rojo" value="rojo"></button>
+        <button type="button" id="amarillo" value="amarillo"></button>
+        <button type="button" id="verde" value="verde"></button>
+        <button type="button" id="azul" value="azul"></button>
+    
+        <button id="cheked" type="button">Comprobar</button>
+    </div>
     
     <script src="simon.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 </body>

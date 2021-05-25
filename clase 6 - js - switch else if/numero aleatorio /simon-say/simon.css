@@ -7,10 +7,64 @@ body {
 }
 
 i {
-    font-size: 100px;
+    font-size: 80px;
+}
+
+#play-simon {
+    padding: 10px;
+    border-radius: 15px;
+    border: orangered solid 1px;
+    background-color: rgb(240, 230, 230);
+}
+
+#simon-box {
+    font-size: 36px;
 }
 
 span {
     font-family: fantasy;
-    font-size: 100px;
+    font-size: 30px;
+}
+
+#start-game {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 15px;
+    border: solid 1px black;
+}
+
+.color-box {
+    display: none;
+    margin-top: 10px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    outline: none;
+    border-radius: 15px;
+    border: solid 1px black;
+}
+
+#rojo {
+    background-color: red;
+}
+
+#amarillo {
+    background-color: yellow;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#verde {
+    background-color: green;
+}
+
+#cheked {
+    background-color: plum;
+    height: 40px;
 }
