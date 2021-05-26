@@ -60,11 +60,10 @@ const printResult =()=> {
 chekResult.addEventListener('click', printResult)
 
 const reset = document.querySelector('#reset');
-
-function reloadGuess(){
+function reloadGame(){
     window.location.reload();
 }
-reset.addEventListener('click', reloadGuess)
+reset.addEventListener('click', reloadGame)
 
 
 /*for (let i = 0; newArrayColor.length < i; i++){

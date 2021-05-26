@@ -1,0 +1,102 @@
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 900px;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+label {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.box-select {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+}
+
+.human-bet-print {
+    height: 60px;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    border: tomato 1px solid;
+}
+
+button {
+    height: 60px;
+    width: 100px;
+    background-color: wheat;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px;
+}
+
+#bet-compare {
+    height: 30px;
+    width: 300px;
+    border: rgb(103, 223, 207) 1px solid;
+}
+#bet-compare-color{
+    height: 30px;
+    width: 100px;
+    border: yellowgreen 1px solid;
+}
+#bet-compare-od{
+    height: 30px;
+    width: 100px;
+    border: yellowgreen 1px solid;
+}
+#bet-compare-low{
+    height: 30px;
+    width: 100px;
+    border: yellowgreen 1px solid;
+}
+#bet-compare-dozen{
+    height: 30px;
+    width: 100px;
+    border: yellowgreen 1px solid;
+}
+#who-won{
+    height: 30px;
+    width: 100px;
+    border: yellowgreen 1px solid;
+}
+
+.bet-box {
+    height: 200px;
+    width: 700px;
+    border: grey 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

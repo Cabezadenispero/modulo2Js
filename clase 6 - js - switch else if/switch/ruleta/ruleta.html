@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Ruleta</title>
+    <link rel="stylesheet" href="ruleta.css">
+    <script src="https://kit.fontawesome.com/7538d07a3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--ejercicio 1 par o impar-->
+    <form id="ruleta">
+        <div class="box-select">
+            <label for="color">COLOR</label>
+            <select name="" id="color">
+                <option value="">------</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Negro">Negro</option>
+            </select>
+        </div>
+        <div class="box-select">
+            <label for="odd-even">PAR O IMPAR</label>
+            <select name="" id="odd-even">
+                <option value="">------</option>
+                <option value="Impar">Impar</option>
+                <option value="Par">Par</option>
+            </select>
+        </div>
+        <div class="box-select">
+            <label for="low-high">ALTO O BAJO</label>
+            <select name="" id="low-high">
+                <option value="">-----------</option>
+                <option value="Bajo">Bajo</option>
+                <option value="Alto">Alto</option>
+            </select>
+        </div>
+        <div class="box-select">
+            <label for="dozen">DOCENA</label>
+            <select name="" id="dozen">
+                <option value="">-----------</option>
+                <option value="Primera">Primera Docena (nro entre 1 y 12)</option>
+                <option value="Segunda">Segunda Docena (nro entre 13 y 24)</option>
+                <option value="Tercera">Tercera Docena (nro entre 25 y 36)</option>
+            </select>
+        </div>
+            <span class="human-bet-print" id="bet-number">Tu apuesta es___ </span>    
+            <button type="button" id="bet">Apuesta</button>
+    </form>
+    <div class="bet-box">
+        
+        <p>Ruleta:</p>
+        <p id="bet-compare"></p>
+        <p>Color</p>
+        <p id="bet-compare-color"></p>
+        <p>Par o Impar</p>
+        <p id="bet-compare-od"></p>
+        <p>Alto o bajo</p>
+        <p id="bet-compare-low"></p>
+        <p>Docena apostada</p>
+        <p id="bet-compare-dozen"></p>
+        <button type="button" id="compare-button">¿quien ganó?</button>
+        <p id="who-won"></p>
+    </div>
+    <script src="ruleta.js"></script>
+</body>
