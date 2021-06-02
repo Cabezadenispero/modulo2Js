@@ -11,17 +11,18 @@
 <body>
 <!--ejercicio 1 par o impar-->
     <form id="ruleta">
-        <div class="box-select">
+        
             <label for="color">COLOR</label>
-            <select name="" id="color">
+            <button type="button" name="color_option" value="rojo" id="color">Rojo</button>
+            <!--<select name="color_option" id="color">
                 <option value="">------</option>
                 <option value="Rojo">Rojo</option>
                 <option value="Negro">Negro</option>
-            </select>
-        </div>
+            </select>-->
+        
         <div class="box-select">
             <label for="odd-even">PAR O IMPAR</label>
-            <select name="" id="odd-even">
+            <select name="odd-even_option" id="odd-even">
                 <option value="">------</option>
                 <option value="Impar">Impar</option>
                 <option value="Par">Par</option>
@@ -29,7 +30,7 @@
         </div>
         <div class="box-select">
             <label for="low-high">ALTO O BAJO</label>
-            <select name="" id="low-high">
+            <select name="low-high_option" id="low-high">
                 <option value="">-----------</option>
                 <option value="Bajo">Bajo</option>
                 <option value="Alto">Alto</option>
@@ -37,7 +38,7 @@
         </div>
         <div class="box-select">
             <label for="dozen">DOCENA</label>
-            <select name="" id="dozen">
+            <select name="dozen_option" id="dozen">
                 <option value="">-----------</option>
                 <option value="Primera">Primera Docena (nro entre 1 y 12)</option>
                 <option value="Segunda">Segunda Docena (nro entre 13 y 24)</option>
@@ -46,6 +47,7 @@
         </div>
             <span class="human-bet-print" id="bet-number">Tu apuesta es___ </span>    
             <button type="button" id="bet">Apuesta</button>
+            <button type="button" id="">Apuesta</button>
     </form>
     <div class="bet-box">
         
