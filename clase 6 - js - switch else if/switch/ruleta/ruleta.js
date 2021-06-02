@@ -54,6 +54,9 @@ const betCompareDozen= document.querySelector('#bet-compare-dozen');
 const betCompareGame=()=>
 {
     if(betPc[0]==humanChoice[0]){
+        betCompareColor.innerHTML="Gana!"
+    }
+    if(betPc[1]==humanChoice[1]){
         betCompareOdd.innerHTML="Gana!"
     }
     if(betPc[2]==humanChoice[2]){
